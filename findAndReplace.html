@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway:light 300">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Find and Replace</title>
+  </head>
+  <body>
+    <center>
+    <h1>iWord Modify</h1>
+    </center>
+    <div class="container">
+      <div class="sentence">
+        <form id="findReplace">
+          <label for="phrase">Sentence</label>
+            <textarea class="u-full-width" type="text" id="phrase"></textarea>
+      </div>
+              <div class="row">
+                <div class="six columns">
+                  <label for="oldWord">Search for word</label>
+                    <input class="u-full-width" type="text" id="oldWord">
+                </div>
+                <div class="six columns">
+                  <label for="newWord">Replacement word</label>
+                    <input class="u-full-width" type="text" id="newWord">
+                  </div>
+                </div>
+                <br>
+            <input class="button" type="submit" value="Submit">
+        </form>
+        <br>
+      <div id="result">
+        <h2><span id="replaceWordPhrase"></span></h2>
+      </div>
+    </div>
+  </body>
+</html>

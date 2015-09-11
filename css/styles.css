@@ -1,0 +1,15 @@
+#result {
+  display: none;
+  margin-top:2%
+}
+
+h1 {
+  font-weight:300;
+  margin-top:5%;
+  margin-bottom:5%;
+}
+
+input.button {
+  color: white;
+  background-color: #990033;
+}
