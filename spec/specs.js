@@ -3,7 +3,7 @@ describe("findAndReplace", function (){
     expect(findAndReplace("Hello world", "world", "universe")).to.equal("Hello universe");
   });
 
-  it("will find and replace multiple words", function (){
+  it("will find and replace the same word in multiple places", function (){
     expect(findAndReplace("world Hello world", "world", "universe")).to.equal("universe Hello universe");
   });
 
@@ -14,4 +14,12 @@ describe("findAndReplace", function (){
   it("will find and replace a special character", function (){
     expect(findAndReplace("world's Hello world's", "'", ",")).to.equal("world,s Hello world,s");
   });
+
+  it("will find and replace a word within a word", function () {
+    expect(findAndReplace("wordHello", "word", "world")).to.equal("worldHello");
+    });
+
+   it("will find and replace a number within a word", function(){
+     expect(findAndReplace("wordHello23", "23", "15")).to.equal("wordHello15");
+   });
 });
