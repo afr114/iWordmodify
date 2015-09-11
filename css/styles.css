@@ -13,3 +13,18 @@ input.button {
   color: white;
   background-color: #990033;
 }
+
+.header img {
+  float: right;
+  width: 48px;
+  height: 68px;
+  background: white;
+  padding-right:40%;
+}
+
+.header h1 {
+  position: relative;
+  top: 18px;
+  padding-left: 35%
+  ;
+}
